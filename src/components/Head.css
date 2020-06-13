@@ -4,7 +4,8 @@
     white-space: pre-wrap;
     margin-right: 50px;
     /* font-size: 25px; */
-    margin-top: -80px;
+    margin-top: -50px;
+    max-width: 43%;
 }
 
 .nav{

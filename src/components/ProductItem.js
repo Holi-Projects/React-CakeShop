@@ -8,7 +8,7 @@ function ProductItem(props){
 
 
     return(
-        <div className={itemClass}>
+        <div className={itemClass} id='prod-img'>
             {props.img}
             <div className="overlay">
                 <a href="/#" className="icon" title="Add to Cart" 

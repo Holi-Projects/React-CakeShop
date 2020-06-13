@@ -68,10 +68,10 @@ function Head(props){
                     <ul className="prod">
                         {list} 
                     </ul>
-                    <h3>Total $<span id="total">{props.total}</span>  
+                    <h3>Total $<span id="total">{props.total}</span>&nbsp;&nbsp;  
                     Qty: {props.item.length}</h3>
                             <div id="btn">
-                                <button id="clear" onClick={props.clear}>Clear Cart</button>
+                                <button id="clear" onClick={props.clear}>Clear Cart</button>&nbsp;&nbsp;
                                 <button id="checkout">CheckOut</button>
                             </div>
                 </div>
