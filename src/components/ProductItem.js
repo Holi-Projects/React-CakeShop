@@ -5,7 +5,6 @@ import './ProductItem.css'
 function ProductItem(props){
      const itemClass = `col-md-4 ${props.type}`
      const item = props.type.substring(0, props.type.indexOf('-'));
-     //console.log(item)
 
 
     return(

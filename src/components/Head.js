@@ -6,29 +6,22 @@ import logo from '../img/logo.svg'
 
 function Head(props){
 
-    //const[visible, setVisible] = React.useState({opacity: 0,visibility: 'hidden'})
-    const[visible,setVisible] = React.useState('modal1')
-    //const[item, setItem] = React.useState(props.item)
-
-    const toggleModal = () => {
-        // setVisible({
-        //     opacity: 1,
-        //     visibility: "visible"
-        // });
-        setVisible('show-modal')
     
+    const[visible,setVisible] = React.useState('modal1')
+
+    //Display modal on click
+    const toggleModal = () => {
+        setVisible('show-modal')
     }
 
+    //Hide modal on click
     const hide = () => {
-        // setVisible({
-        //     opacity: 0,visibility: 'hidden'
-        // })
         setVisible('modal1')
     }
-    //console.log(props.item)
+    
     
     const list = props.item.map( (item,i) =>{
-        //console.log(item)
+       
         return(
         <li key={i}> <img src={item.mimg} alt='item'/>
             Product: {item.mit} <br />
@@ -54,7 +47,9 @@ function Head(props){
                     </div>
 
                     <div className="nav-item">
-                        <span><i className="fa fa-phone"></i>+1379008899</span> &nbsp;&nbsp;
+                        <span><i className="fa fa-phone"></i>+1379008899<br/>
+                        <i className="fa fa-envelope"></i>dcake@gm.com</span> &nbsp;&nbsp;
+                        
                     <button id="cart" onClick={toggleModal}><i className="fa fa-shopping-cart"></i> {addMsg}</button>
                     </div>
                 </nav>
