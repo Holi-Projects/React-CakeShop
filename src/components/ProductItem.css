@@ -1,0 +1,35 @@
+img{
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(241, 237, 237);
+    background: rgba(248, 246, 246, 0.5); /* Black see-through */
+    /* color: #f1f1f1;  */
+    width: 65%;
+    height: 30%;
+    transition: .5s ease;
+    opacity:0;
+    /* color: white; */
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+  
+  .col-md-4:hover .overlay {
+    opacity: 1;
+  }
+
+  .val {
+    /* background-color: whitesmoke; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}

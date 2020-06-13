@@ -1,0 +1,126 @@
+.nav-item{
+    display: inline-flex;
+    float: right;
+    white-space: pre-wrap;
+    margin-right: 50px;
+    font-size: 25px;
+    margin-top: -80px;
+}
+
+.nav{
+    background-color: aliceblue;
+}
+
+#logo{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+#navList {
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0px 20px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+#navList a{
+    padding: 0% 30px;
+    font-size: 30px;
+}
+
+a img{
+    width: 10%;
+    height: auto;
+}
+
+
+header{
+    text-align: center;
+    background-image: url("../img/headerBcg.jpeg");
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.modal1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    /* width: 24rem; */
+    border-radius: 0.5rem;
+    max-width: 50%;
+    /* max-height: 100%; */
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+    flex-direction: row-reverse;
+    font-size: 20px;
+}
+.close-button:hover {
+    background-color: darkgray;
+    
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.prod li img{
+    width: 20%;
+    height: 10%;
+    float: left;
+}
+
+.prod li{
+    display: inline-flex;
+    font-size: 20px;
+    -webkit-text-stroke: medium;
+    margin: inherit;
+}
+
+.prod li a{
+    /* align-self: center; */
+    margin: auto;
+    
+}
+.prod li span{
+    display: contents;
+}
+
+.modal-content1 #btn {
+    font: -webkit-small-control;
+    font-size: x-large;
+    text-align: -webkit-center;
+} 
+
+.modal-content1 h3{
+    text-align: center;
+    font-family: fantasy;
+    font-size: x-large;
+}

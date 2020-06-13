@@ -1,0 +1,16 @@
+#about img{
+    float: right;
+    width: 40%;
+    height: 40%;
+     
+}
+
+#about h1{
+    font-size: 200%;
+}
+
+#about  {
+    float: left;
+    margin: 30px 50px 10px;
+    font-size: 100%;
+}

@@ -1,0 +1,15 @@
+.filter{
+    text-align: center;
+    /* margin-top: 420px; */
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.filter input {
+    font-size: 20px;
+}
+
+.filter button{
+    font-size: 25px;
+}
