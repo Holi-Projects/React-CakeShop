@@ -2,6 +2,9 @@ import React from 'react'
 import './Head.css';
 import 'font-awesome/css/font-awesome.min.css';
 import logo from '../img/logo.svg'
+import Routes from './Routes';
+import { Link } from 'react-router-dom';
+
 
 
 function Head(props){
@@ -11,12 +14,19 @@ function Head(props){
 
     //Display modal on click
     const toggleModal = () => {
+        if(props.item.length > 0)
         setVisible('show-modal')
     }
 
     //Hide modal on click
     const hide = () => {
         setVisible('modal1')
+    }
+
+    //preventing items from re-rendering/refresh when deleted
+    const removeItem = (e,id) => {
+        e.preventDefault()
+        props.deleteItem(id)
     }
     
     
@@ -26,24 +36,25 @@ function Head(props){
         <li key={i}> <img src={item.mimg} alt='item'/>
             Product: {item.mit} <br />
         <span>Price: ${item.price}</span>
-            <a href='/#' id='rm' onClick={() => props.deleteItem(item.id)}>
+            <a href='/#' id='rm' onClick={(e) => removeItem(e,item.id)}>
                 <i className='fa fa-trash'></i>
             </a>
         </li>)
     })
     
     const addMsg = props.item.length>0? `No. Items ${props.item.length}`:'Add Items'
-    
+    //console.log(list)
     return(
         
         <div>
             <div className='nav'>
                 <nav>
-                    <div id='logo'><a href="/#"><img src={logo} alt='logo' /></a></div>
+                    <div id='logo'><Link to="/home"><img src={logo} alt='logo' /></Link></div>
                     <div id='navList'>
-                        <a href="/#">Home</a>
+                        {/* <a href="/#">Home</a>
                         <a href="/#">About</a>
-                        <a href="/#">Store</a>
+                        <a href="/#">Store</a> */}
+                        <Routes />
                     </div>
 
                     <div className="nav-item">

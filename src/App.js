@@ -21,7 +21,7 @@ function App() {
       itemPrice += dollar
       setPrice(itemPrice)
     }
-    //console.log(itemPrice)
+    console.log(modalItem)
   }
 
 

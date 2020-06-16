@@ -32,7 +32,7 @@ function Product(props){
 
     //Getting items value to be added to Cart
     const addToCart = (item,img,price) => {
-        props.addToModal(item,img,price)
+        props.addToModal(item,img,price) 
     }
 
     //Displaying items using the image array and the require function 
@@ -54,11 +54,11 @@ function Product(props){
         }
 
         //filter and display items on button click
-        if(filter === itemName){
+        if(filter === itemName ){
             return <ProductItem key={i} img={img} type={img.key} 
             price={price} id={i} addCart={addToCart}/>
         }
-        else if(filter === 'all'){
+        else if(filter === 'all' ){
             return <ProductItem key={i} img={img} type={img.key} 
             price={price} id={i} addCart={addToCart}/>
         }

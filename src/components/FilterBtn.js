@@ -24,7 +24,7 @@ function FilterBtn(props){
             <br /><br />
             <div>
                 <button><i className="fa fa-search"></i></button>
-                <input type="text" id="find" placeholder="item" onChange={handleInput} />
+                <input type="text" id="find" placeholder="Search item" onChange={handleInput} />
             </div>
         </div>
     )
