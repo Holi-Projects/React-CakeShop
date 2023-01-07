@@ -6,3 +6,4 @@ change the array of images to match.
 
 preview available at https://cake-shop101.herokuapp.com/
 Demo also available @  https://new-frogs.surge.sh/home
+https://new-frogs.surge.sh/
